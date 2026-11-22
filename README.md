@@ -39,30 +39,30 @@ The forecasting target is the **log of 21-trading-day annualized realized volati
 
 For a trading day, the Garman–Klass variance estimate is:
 
-\[
+$$
 GK_t = \frac{1}{2}\left(\ln\frac{H_t}{L_t}\right)^2
 - (2\ln 2 - 1)\left(\ln\frac{C_t}{O_t}\right)^2
-\]
+$$
 
 The 21-day annualized realized volatility is computed by taking the rolling mean of daily variance estimates and annualizing it using 252 trading days. When the range-based estimate is missing or non-positive, the implementation falls back to squared close-to-close log returns.
 
 The final modelling target is:
 
-\[
+$$
 y_t = \log(RV_{21,t} + \epsilon), \qquad \epsilon = 10^{-8}
-\]
+$$
 
 Each model produces the quantiles:
 
-\[
+$$
 q \in \{0.1, 0.2, \ldots, 0.9\}
-\]
+$$
 
 for forecast horizons of **1 to 5 trading days**. The central 80% prediction interval is therefore:
 
-\[
+$$
 [ q_{0.1},\ q_{0.9} ]
-\]
+$$
 
 ## Methodology
 
