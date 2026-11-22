@@ -40,8 +40,7 @@ The forecasting target is the **log of 21-trading-day annualized realized volati
 For a trading day, the Garman–Klass variance estimate is:
 
 $$
-GK_t = \frac{1}{2}\left(\ln\frac{H_t}{L_t}\right)^2
-- (2\ln 2 - 1)\left(\ln\frac{C_t}{O_t}\right)^2
+GK_t = \frac{1}{2}\left(\ln\frac{H_t}{L_t}\right)^2 - (2\ln 2 - 1)\left(\ln\frac{C_t}{O_t}\right)^2
 $$
 
 The 21-day annualized realized volatility is computed by taking the rolling mean of daily variance estimates and annualizing it using 252 trading days. When the range-based estimate is missing or non-positive, the implementation falls back to squared close-to-close log returns.
