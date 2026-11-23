@@ -263,6 +263,3 @@ The first phase writes `data/financial_vol_panel.parquet` and `data/financial_vo
 - Conformal calibration can widen intervals substantially. Better coverage does not automatically imply a better interval score or a more useful forecast.
 - Results depend on the downloaded data, the selected date splits, and the training environment.
 
-## Disclaimer
-
-This project is intended for educational and research purposes. Forecasts and prediction intervals are experimental outputs, not investment recommendations or financial advice. The project does not demonstrate a profitable trading strategy, and no guarantee is made about the accuracy or reliability of forecasts in live markets.
